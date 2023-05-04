@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--Creating Objects-->
+    <bean class = "com.example.conatainer_tut.ambiguitytut.AddVar" name = "add">
+        <constructor-arg value="12" type = "int" index="1"/>
+        <constructor-arg value="34" type = "int" index="0"/>
+    <!--
+    By default it uses the string and is it found the string constructor in the class it will pass the value.
+    but if string constructor is not their then it will go according to the order an tries to resolve the problem.
+
+    We can use type tag to specify otherwise spring it self able to find the tag
+
+    We can also define the order of the value by using index tag and here also index value starts from 0.
+    -->
+
+    </bean>
+</beans>

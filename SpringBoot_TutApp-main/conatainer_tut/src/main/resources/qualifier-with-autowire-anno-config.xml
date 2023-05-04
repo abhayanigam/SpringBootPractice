@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--Creating Objects-->
+    <bean class="com.example.conatainer_tut.autowireannotut.Address" name="address">
+        <!--The name should be same like a class if we are using the autowire = "byName"-->
+        <!--The name should not be the same like a class if we are using the autowire = "bytype"-->
+        <property name="street" value="Lucknow Street"/>
+        <property name="city" value="Lucknow"/>
+    </bean>
+
+<!--    <bean class="com.example.conatainer_tut.autowiretut.Employee" name="emp" autowire="byName"/>-->
+    <bean class="com.example.conatainer_tut.autowireannotut.Employee" name="emp"/>
+</beans>
