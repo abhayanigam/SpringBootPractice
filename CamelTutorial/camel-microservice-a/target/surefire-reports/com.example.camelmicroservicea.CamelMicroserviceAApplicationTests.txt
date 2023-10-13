@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.example.camelmicroservicea.CamelMicroserviceAApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.181 s <<< FAILURE! - in com.example.camelmicroservicea.CamelMicroserviceAApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route3: Route(route3)[From[schedule:myScheduledRoute1?delay=5000] ->... because of No endpoint could be found for: schedule://myScheduledRoute1?delay=5000, please check your classpath contains the needed Camel component jar.
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: schedule://myScheduledRoute1?delay=5000, please check your classpath contains the needed Camel component jar.
+

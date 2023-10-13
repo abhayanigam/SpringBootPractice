@@ -1,0 +1,7 @@
+com/example/camelmicroservicea/routes/c/ActiveMqSenderRouter.class
+com/example/camelmicroservicea/routes/a/SimpleLoggingProcessingComponent.class
+com/example/camelmicroservicea/routes/a/MyFirstTimerRouter.class
+com/example/camelmicroservicea/routes/a/SimpleLoggingProcessor.class
+com/example/camelmicroservicea/routes/b/MyFileRouter.class
+com/example/camelmicroservicea/CamelMicroserviceAApplication.class
+com/example/camelmicroservicea/routes/a/GetCurrentTimeBean.class
