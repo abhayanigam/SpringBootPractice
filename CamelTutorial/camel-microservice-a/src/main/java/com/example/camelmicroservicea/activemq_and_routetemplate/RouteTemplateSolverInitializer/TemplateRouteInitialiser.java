@@ -54,3 +54,28 @@ public class TemplateRouteInitialiser extends RouteBuilder {
     }
 }
 
+/*
+> db.message.find().pretty()
+{
+	"_id" : ObjectId("65252b37b8fecf6a8d0954d3"),
+	"TemplateName" : "Solver",
+	"TemplateProperties" : {
+		"clientId" : "1",
+		"module" : "TASK",
+		"message" : "Task Created !!!",
+		"allowedEvents" : "#CREATE#"
+	},
+	"status" : "active"
+}
+{
+	"_id" : ObjectId("65252b37b8fecf6a8d0954d4"),
+	"TemplateName" : "Solver",
+	"TemplateProperties" : {
+		"clientId" : "2",
+		"module" : "TASK",
+		"message" : "Due Date Changed !!!",
+		"allowedEvents" : "#CHANGE_DUE_DATE#"
+	},
+	"status" : "active"
+}
+*/
