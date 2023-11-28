@@ -40,27 +40,42 @@ public class SolverOne extends RouteBuilder {
 }
 
 /*
-> db.message.insert([
-    {
-        "TemplateName": "Solver",
-        "TemplateProperties": {
-            "clientId": "1",
-            "module": "TASK",
-            "message": "Task Created !!!",
-            "allowedEvents": "#CREATE#"
-        },
-        "status": "active"
-    },
-    {
-        "TemplateName": "Solver",
-        "TemplateProperties": {
-            "clientId": "2",
-            "module": "TASK",
-            "message": "Due Date Changed !!!",
-            "allowedEvents": "#CHANGE_DUE_DATE#"
-        },
-        "status": "active"
-    }
-]);
+> Postman Url : http://localhost:8082/produce/que-push
+> Body Send (POST) :   {
+			    "queId": "ABHAYA",
+			    "properties": {
+				"module": "TASK",
+				// "event": "CREATE",
+				"event": "CHANGE_DUE_DATE",
+				"action": "AFTER",
+				"eventName": "TEST 1"
+			    },
+			    "data": {
+				"_id" : "",
+				"name": "Abhaya"
+			    }
+			}
 
+> db.message.insert([
+		    {
+			"TemplateName": "Solver",
+			"TemplateProperties": {
+			    "clientId": "1",
+			    "module": "TASK",
+			    "message": "Task Created !!!",
+			    "allowedEvents": "#CREATE#"
+			},
+			"status": "active"
+		    },
+		    {
+			"TemplateName": "Solver",
+			"TemplateProperties": {
+			    "clientId": "2",
+			    "module": "TASK",
+			    "message": "Due Date Changed !!!",
+			    "allowedEvents": "#CHANGE_DUE_DATE#"
+			},
+			"status": "active"
+		    }
+		]);
 */
