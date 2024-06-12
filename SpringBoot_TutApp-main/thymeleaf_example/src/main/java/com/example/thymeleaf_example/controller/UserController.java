@@ -14,6 +14,7 @@ public class UserController {
     {
         return"index";
     }
+
     @PostMapping(value="/save")
     public ModelAndView save(@ModelAttribute User user)
     {
